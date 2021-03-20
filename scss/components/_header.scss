@@ -1,0 +1,30 @@
+.header {
+  position: absolute;
+  width: 100%;
+
+  padding-top: 40px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-icon {
+  width: 67px;
+  height: 56px;
+}
+
+.header__menu-icon {
+  width: 24px;
+  height: 16px;
+}
+
+.header__menu-button {
+  padding: 12px 8px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
