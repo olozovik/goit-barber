@@ -7,6 +7,10 @@
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 420px) {
+    font-size: 9px;
+  }
 }
 
 .subtitle--transp {

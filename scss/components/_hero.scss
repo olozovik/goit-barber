@@ -1,18 +1,54 @@
 .hero {
   height: 580px;
-
   padding-top: 208px;
   padding-bottom: 183px;
 
   background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
-    url(../images/hero/hero3.jpg);
+    url(../images/hero/hero3-480.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 480px 580px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
+      url(../images/hero/hero3-480@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 274px;
+    padding-bottom: 245px;
+
+    height: 680px;
+    background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
+      url(../images/hero/hero3-768.jpg);
+    background-position: calc(50% + 80px);
+    background-size: 609px 680px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
+        url(../images/hero/hero3-768@2x.jpg);
+    }
+  }
+}
+
+.hero__container {
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 134px 0 279px;
+  }
 }
 
 .hero__subtitle {
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 18px;
+  }
 }
 
 .hero__title {
@@ -25,14 +61,40 @@
   letter-spacing: 0.05em;
 
   color: $titleLight;
+
+  @media screen and (max-width: 420px) {
+    font-size: 37px;
+  }
 }
 
 .hero__text {
-  width: 306px;
-
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.02em;
 
   color: $secondTextColor;
+
+  @media screen and (max-width: 480px) {
+    width: 65%;
+  }
+
+  @media screen and (max-width: 420px) {
+    font-size: 14px;
+    line-height: 1.5;
+    width: 80%;
+  }
+}
+
+.hero__slider-makr {
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 30px;
+
+  top: 65px;
+  right: 6.5%;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

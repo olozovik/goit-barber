@@ -4,4 +4,10 @@
 
   min-width: 320px;
   max-width: 480px;
+
+  outline: 2px dotted gray;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 }
