@@ -310,7 +310,6 @@ button {
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  background-color: lightgray;
 }
 
 .container {
@@ -375,6 +374,7 @@ body {
 }
 
 .header__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -484,6 +484,47 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.header-social {
+  position: absolute;
+  left: -194px;
+  top: 318px;
+  display: flex;
+  align-items: center;
+  transform: rotate(-90deg);
+  transform-origin: center right;
+}
+@media screen and (max-width: 767px) {
+  .header-social {
+    display: none;
+  }
+}
+
+.header-social:before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  margin-right: 40px;
+}
+
+.header-social__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-social__link {
+  padding: 20px 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: #303030;
+  cursor: url(../images/finger-rotate.svg), pointer;
+}
+.header-social__link:hover {
+  color: #ff6c00;
 }
 
 .hero {
