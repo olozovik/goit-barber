@@ -354,6 +354,19 @@ body {
   margin-right: 20px;
 }
 
+.order-button {
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -370,6 +383,7 @@ body {
   .header__container {
     justify-content: flex-start;
     padding-left: 50px;
+    align-items: flex-start;
   }
 }
 
@@ -412,14 +426,26 @@ body {
   cursor: pointer;
 }
 
+.nav-wrapper {
+  display: flex;
+  align-items: baseline;
+}
 @media screen and (max-width: 767px) {
-  .nav {
+  .nav-wrapper {
     display: none;
   }
 }
 
+.nav {
+  margin-right: 47px;
+}
+
 .nav__list {
   display: flex;
+}
+
+.nav__item {
+  padding: 19px 0;
 }
 
 .nav__item:not(:last-child) {
@@ -436,6 +462,28 @@ body {
 .nav__link:hover, .nav__link:focus {
   color: #ff6c00;
   cursor: url(../images/finger.svg), pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .header__right {
+    display: none;
+  }
+}
+
+.header__button {
+  margin-bottom: 20px;
+  cursor: url(../images/finger.svg), pointer;
+}
+
+.header__email {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .hero {

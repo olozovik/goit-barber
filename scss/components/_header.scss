@@ -14,6 +14,7 @@
   @media screen and (min-width: $tablet) {
     justify-content: flex-start;
     padding-left: 50px;
+    align-items: flex-start;
   }
 }
 
@@ -56,14 +57,25 @@
   cursor: pointer;
 }
 
-.nav {
+.nav-wrapper {
+  display: flex;
+  align-items: baseline;
+
   @media screen and (max-width: $tablet - 1px) {
     display: none;
   }
 }
 
+.nav {
+  margin-right: 47px;
+}
+
 .nav__list {
   display: flex;
+}
+
+.nav__item {
+  padding: 19px 0;
 }
 
 .nav__item:not(:last-child) {
@@ -75,7 +87,6 @@
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
-
   color: $lightTextColor;
 
   &:hover,
@@ -83,4 +94,28 @@
     color: $accentColor;
     cursor: $myCursor;
   }
+}
+
+.header__right {
+  @media screen and (max-width: $tablet - 1px) {
+    display: none;
+  }
+}
+
+.header__button {
+  margin-bottom: 20px;
+
+  cursor: $myCursor;
+}
+
+.header__email {
+  display: block;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $lightTextColor;
 }
