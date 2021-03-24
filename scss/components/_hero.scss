@@ -18,7 +18,7 @@
       url(../images/hero/hero3-480@2x.jpg);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 274px;
     padding-bottom: 245px;
 
@@ -33,6 +33,23 @@
       screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
         url(../images/hero/hero3-768@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 272px;
+    padding-bottom: 206px;
+
+    background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
+      url(../images/hero/hero3-1200.jpg);
+    background-position: calc(50% + 78px);
+    background-size: 1125px 680px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
+        url(../images/hero/hero3-1200@2x.jpg);
     }
   }
 }
