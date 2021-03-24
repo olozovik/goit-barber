@@ -107,6 +107,10 @@
   left: calc(50% + 200px);
 
   display: flex;
+
+  @media screen and (max-width: $tablet - 1px) {
+    display: none;
+  }
 }
 
 .slider-btns__btn {

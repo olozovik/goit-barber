@@ -631,6 +631,11 @@ body {
   left: calc(50% + 200px);
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .slider-btns {
+    display: none;
+  }
+}
 
 .slider-btns__btn {
   background-color: transparent;
