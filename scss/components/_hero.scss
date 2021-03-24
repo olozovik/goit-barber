@@ -1,4 +1,6 @@
 .hero {
+  position: relative;
+
   height: 580px;
   padding-top: 208px;
   padding-bottom: 183px;
@@ -85,16 +87,68 @@
   }
 }
 
-.hero__slider-makr {
+.hero__slider-icon {
   position: absolute;
   display: block;
   width: 18px;
   height: 30px;
 
-  top: 65px;
-  right: 6.5%;
+  top: 53px;
+  right: 39px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: $tablet - 1px) {
     display: none;
   }
+}
+
+.slider-btns {
+  position: absolute;
+  bottom: 40px;
+  left: calc(50% + 200px);
+
+  display: flex;
+}
+
+.slider-btns__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+
+  color: $subtitleColorTransp;
+
+  &:not(:last-child) {
+    margin-right: 26px;
+  }
+
+  &--forward {
+    align-items: flex-end;
+    color: $titleLight;
+  }
+}
+
+.slider-btns__btn--back::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: $subtitleColorTransp;
+  margin-top: 8px;
+}
+
+.slider-btns__btn--forward::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: $titleLight;
+
+  margin-top: 8px;
 }
