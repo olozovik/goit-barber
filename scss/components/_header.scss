@@ -4,6 +4,10 @@
 
   padding-top: 40px;
   z-index: 2;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 28px;
+  }
 }
 
 .header__container {
@@ -15,8 +19,12 @@
 
   @media screen and (min-width: $tablet) {
     justify-content: flex-start;
-    padding-left: 50px;
     align-items: flex-start;
+    padding-left: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 15px;
   }
 }
 
@@ -24,17 +32,23 @@
   @media screen and (min-width: $tablet) {
     margin-right: 46px;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .header__logo-icon {
   display: block;
   width: 67px;
   height: 56px;
+
   fill: white;
 
   @media screen and (min-width: $tablet) {
     width: 69px;
     height: 56px;
+
     fill: #303030;
   }
 }
@@ -62,6 +76,7 @@
 .nav-wrapper {
   display: flex;
   align-items: baseline;
+  width: 100%;
 
   @media screen and (max-width: $tablet - 1px) {
     display: none;
@@ -69,7 +84,9 @@
 }
 
 .nav {
-  margin-right: 47px;
+  @media screen and (max-width: $desktop - 1px) {
+    margin-right: 45px;
+  }
 }
 
 .nav__list {
@@ -78,6 +95,10 @@
 
 .nav__item:not(:last-child) {
   margin-right: 24px;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 40px;
+  }
 }
 
 .nav__link {
@@ -101,13 +122,26 @@
   @media screen and (max-width: $tablet - 1px) {
     display: none;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
 }
 
 .header__button {
-  margin-bottom: 20px;
+  @media screen and (max-width: $desktop - 1px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    // margin-left: 10px;
+  }
 }
 
-.header__email {
+.header__phone {
   display: block;
 
   font-weight: 600;
@@ -117,6 +151,11 @@
   text-align: center;
   text-transform: uppercase;
   color: $lightTextColor;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 40px;
+    padding: 19px 0;
+  }
 }
 
 .header-social {
@@ -133,15 +172,19 @@
 
   transform: rotate(-90deg);
   transform-origin: center right;
+
+  @media screen and (min-width: $desktop) {
+    left: -225px;
+  }
 }
 
 .header-social:before {
   content: '';
   display: inline-block;
+  margin-right: 40px;
   width: 60px;
   height: 1px;
   background-color: $subtitleColorDark;
-  margin-right: 40px;
 }
 
 .header-social__item:not(:last-child) {
