@@ -66,7 +66,7 @@
   display: block;
   width: 19px;
   height: 19px;
-  fill: $subtitleColorDark;
+  fill: $titleColorDark;
   transition: fill 200ms linear;
 
   .mobile-menu__close-btn:hover & {
@@ -87,7 +87,7 @@
   font-size: 18px;
   line-height: 1.389;
   letter-spacing: 0.1em;
-  color: $subtitleColorDark;
+  color: $titleColorDark;
   transition: color 200ms linear;
 
   &:hover {
@@ -108,12 +108,16 @@
   font-size: 18px;
   line-height: 1.389;
   letter-spacing: 0.1em;
-  color: $subtitleColorDark;
+  color: $titleColorDark;
 }
 
 .mobile-menu__order-btn {
   padding: 12px 37px;
-  color: $subtitleColorDark;
+  color: $titleColorDark;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .mobile-social__wrapper {
@@ -128,7 +132,7 @@
     display: inline-block;
     width: 60px;
     height: 1px;
-    background-color: $subtitleColorDark;
+    background-color: $titleColorDark;
   }
 }
 
@@ -146,7 +150,7 @@
   font-size: 14px;
   line-height: 1.357;
   letter-spacing: 0.2em;
-  color: $subtitleColorDark;
+  color: $titleColorDark;
   transition: color 200ms linear;
 
   &:hover {

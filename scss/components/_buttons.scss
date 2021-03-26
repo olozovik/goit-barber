@@ -6,14 +6,20 @@
   line-height: 1.333;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: $buttonTextColor;
+  color: #ffffff;
 
   border: 1px solid $accentColor;
   border-radius: 25px;
   background-color: transparent;
 
+  transition: background-color 200ms linear;
+
   &:hover {
     background-color: $accentColor;
     cursor: $myCursor;
+  }
+
+  &--dark-text {
+    color: #303030;
   }
 }
