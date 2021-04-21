@@ -4,6 +4,28 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 480px;
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/services/services480@2x.png),
+      linear-gradient(to right, #111319, #111319);
+  }
+
+  @media screen and(min-width: $tablet) {
+    background-image: url(../images/services/services768.png),
+      linear-gradient(to right, #111319, #111319);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 768px;
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/services/services768@2x.png),
+        linear-gradient(to right, #111319, #111319);
+    }
+  }
 }
 
 .services__subtitle {
@@ -26,6 +48,10 @@
     #171a24 0%,
     rgba(23, 26, 36, 0.2) 100%
   );
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 40px;
+  }
 }
 
 .services-tables__left,
@@ -34,6 +60,11 @@
   line-height: 2.143;
   letter-spacing: 0.02em;
   color: $secondTextColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.667;
+  }
 }
 
 .services-tables__left {

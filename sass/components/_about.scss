@@ -52,6 +52,12 @@
   @media screen and (max-width: $tablet - 1px) {
     max-width: 330px;
   }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 1.179;
+    letter-spacing: 0.05em;
+  }
 }
 
 .about__paragraph {
