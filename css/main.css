@@ -1027,7 +1027,7 @@ body {
     max-width: 330px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .about__title {
     font-size: 28px;
     line-height: 1.179;
@@ -1071,14 +1071,23 @@ body {
 @media screen and (min-width: 768px) {
   .services {
     background-image: url(../images/services/services768.png), linear-gradient(to right, #111319, #111319);
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: 768px;
   }
 }
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .services {
     background-image: url(../images/services/services768@2x.png), linear-gradient(to right, #111319, #111319);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .services {
+    background-image: url(../images/services/services1280.png), linear-gradient(to right, #111319, #111319);
+    background-size: 1280px;
+  }
+}
+@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .services {
+    background-image: url(../images/services/services1280@2x.png), linear-gradient(to right, #111319, #111319);
   }
 }
 
@@ -1104,24 +1113,42 @@ body {
     padding: 30px 40px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .services-tables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+}
 
-.services-tables__left,
-.services-tables__right {
+.services-tables__table {
   font-size: 14px;
   line-height: 2.143;
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
 @media screen and (min-width: 768px) {
-  .services-tables__left,
-.services-tables__right {
+  .services-tables__table {
     font-size: 18px;
     line-height: 1.667;
   }
 }
+@media screen and (min-width: 1280px) {
+  .services-tables__table {
+    padding: 30px 40px;
+  }
+}
 
-.services-tables__left {
-  margin-bottom: 20px;
+@media screen and (max-width: 1279px) {
+  .services-tables__table--left {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .services-tables__table--right {
+    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 .services-tables__row {
