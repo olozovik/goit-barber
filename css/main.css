@@ -1178,4 +1178,53 @@ body {
   margin: 0 auto;
 }
 
+.why__subtitle {
+  margin-bottom: 20px;
+}
+
+.why__title {
+  margin-bottom: 20px;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+}
+
+.why__paragraph {
+  margin-bottom: 44px;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+}
+
+.why__card {
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.why__card-quantity {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.357;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.why__card-quantity::after {
+  padding: 5px 0 0 2px;
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #ff6c00;
+}
+
+.why__card-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  color: #303030;
+}
+
 /*# sourceMappingURL=main.css.map */
