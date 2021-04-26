@@ -1,3 +1,9 @@
+.why {
+  @media screen and (min-width: 426px) and (max-width: $tablet - 1px) {
+    padding-bottom: 119px;
+  }
+}
+
 .why__subtitle {
   margin-bottom: 20px;
 }
@@ -18,16 +24,38 @@
   letter-spacing: 0.02em;
 }
 
+.why__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(167px, 1fr));
+  grid-template-rows: repeat(2, 133px);
+  gap: 30px;
+
+  @media screen and (max-width: 425px) {
+    grid-template-rows: repeat(4, 133px);
+  }
+}
+
 .why__card {
   padding: 20px;
+
   background-color: #f7f7f7;
+  text-align: center;
+
+  @media screen and (min-width: 426px) and (max-width: $tablet - 1px) {
+    &:nth-child(2),
+    &:nth-child(4) {
+      position: relative;
+      top: 35px;
+    }
+  }
 }
 
 .why__card-quantity {
-  display: flex;
-  align-items: flex-start;
-
   margin-bottom: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
   font-weight: 700;
   font-size: 42px;
