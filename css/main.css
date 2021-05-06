@@ -38,8 +38,7 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 /*
@@ -84,8 +83,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
-    monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -169,9 +167,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -224,7 +222,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type='search'] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -310,7 +308,7 @@ button {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -374,7 +372,7 @@ body {
 }
 
 .subtitle:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 60px;
   height: 1px;
@@ -542,8 +540,7 @@ body {
   color: #ffffff;
   transition: color 200ms linear;
 }
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: #ff6c00;
   cursor: url(../images/finger.svg), pointer;
 }
@@ -610,7 +607,7 @@ body {
 }
 
 .header-social:before {
-  content: '';
+  content: "";
   display: inline-block;
   margin-right: 40px;
   width: 60px;
@@ -641,26 +638,14 @@ body {
   height: 580px;
   padding-top: 208px;
   padding-bottom: 183px;
-  background-image: linear-gradient(
-      to right,
-      rgba(25, 28, 38, 0.2),
-      rgba(25, 28, 38, 0.2)
-    ),
-    url(../images/hero/hero3-480.jpg);
+  background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero3-480.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 480px 580px;
 }
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(25, 28, 38, 0.2),
-        rgba(25, 28, 38, 0.2)
-      ),
-      url(../images/hero/hero3-480@2x.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero3-480@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -668,52 +653,28 @@ body {
     padding-top: 274px;
     padding-bottom: 245px;
     height: 680px;
-    background-image: linear-gradient(
-        to right,
-        rgba(25, 28, 38, 0.2),
-        rgba(25, 28, 38, 0.2)
-      ),
-      url(../images/hero/hero3-768.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero3-768.jpg);
     background-position: calc(50% + 80px);
     background-size: 609px 680px;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(25, 28, 38, 0.2),
-        rgba(25, 28, 38, 0.2)
-      ),
-      url(../images/hero/hero3-768@2x.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero3-768@2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
   .hero {
     padding-top: 272px;
     padding-bottom: 206px;
-    background-image: linear-gradient(
-        to right,
-        rgba(25, 28, 38, 0.2),
-        rgba(25, 28, 38, 0.2)
-      ),
-      url(../images/hero/hero3-1200.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero3-1200.jpg);
     background-position: calc(50% + 78px);
     background-size: 1125px 680px;
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(25, 28, 38, 0.2),
-        rgba(25, 28, 38, 0.2)
-      ),
-      url(../images/hero/hero3-1200@2x.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero3-1200@2x.jpg);
   }
 }
 
@@ -846,7 +807,7 @@ body {
 }
 
 .slider-btns__btn--back::after {
-  content: '';
+  content: "";
   display: block;
   width: 60px;
   height: 1px;
@@ -855,7 +816,7 @@ body {
 }
 
 .slider-btns__btn--forward::after {
-  content: '';
+  content: "";
   display: block;
   width: 60px;
   height: 1px;
@@ -889,8 +850,7 @@ body {
   width: 337px;
   height: 100vh;
   background-color: #ffffff;
-  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08),
-    -1px 0px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
   z-index: 23;
   transform: translateX(0);
   transition: transform 200ms linear 200ms;
@@ -982,7 +942,7 @@ body {
   left: 0;
   top: 10px;
   margin-right: 40px;
-  content: '';
+  content: "";
   display: inline-block;
   width: 60px;
   height: 1px;
@@ -1098,48 +1058,36 @@ body {
 }
 
 .services {
-  background-image: url(../images/services/services480.png),
-    linear-gradient(to right, #111319, #111319);
+  background-image: url(../images/services/services480.png), linear-gradient(to right, #111319, #111319);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 480px;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .services {
-    background-image: url(../images/services/services480@2x.png),
-      linear-gradient(to right, #111319, #111319);
+    background-image: url(../images/services/services480@2x.png), linear-gradient(to right, #111319, #111319);
   }
 }
 @media screen and (min-width: 768px) {
   .services {
-    background-image: url(../images/services/services768.png),
-      linear-gradient(to right, #111319, #111319);
+    background-image: url(../images/services/services768.png), linear-gradient(to right, #111319, #111319);
     background-size: 768px;
   }
 }
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .services {
-    background-image: url(../images/services/services768@2x.png),
-      linear-gradient(to right, #111319, #111319);
+    background-image: url(../images/services/services768@2x.png), linear-gradient(to right, #111319, #111319);
   }
 }
 @media screen and (min-width: 1280px) {
   .services {
-    background-image: url(../images/services/services1280.png),
-      linear-gradient(to right, #111319, #111319);
+    background-image: url(../images/services/services1280.png), linear-gradient(to right, #111319, #111319);
     background-size: 1280px;
   }
 }
-@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .services {
-    background-image: url(../images/services/services1280@2x.png),
-      linear-gradient(to right, #111319, #111319);
+    background-image: url(../images/services/services1280@2x.png), linear-gradient(to right, #111319, #111319);
   }
 }
 
@@ -1158,11 +1106,7 @@ body {
 .services-tables {
   margin-bottom: 50px;
   padding: 30px;
-  background-image: linear-gradient(
-    180deg,
-    #171a24 0%,
-    rgba(23, 26, 36, 0.2) 100%
-  );
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 @media screen and (min-width: 768px) {
   .services-tables {
@@ -1203,11 +1147,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .services-tables__table--right {
-    background-image: linear-gradient(
-      180deg,
-      #090b13 0%,
-      rgba(9, 11, 19, 0.2) 100%
-    );
+    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
 
@@ -1215,7 +1155,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 .services-tables__row:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -1227,7 +1166,7 @@ body {
   padding-bottom: 8px;
 }
 .services-tables__line::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 1px;
@@ -1341,8 +1280,7 @@ body {
   text-align: center;
 }
 @media screen and (min-width: 426px) {
-  .why__card:nth-child(2),
-  .why__card:nth-child(4) {
+  .why__card:nth-child(2), .why__card:nth-child(4) {
     position: relative;
     top: 35px;
   }
@@ -1361,7 +1299,7 @@ body {
 }
 .why__card-quantity::after {
   padding: 5px 0 0 2px;
-  content: '+';
+  content: "+";
   font-weight: 600;
   font-size: 16px;
   line-height: 1.375;
@@ -1373,6 +1311,83 @@ body {
   font-size: 11px;
   line-height: 1.364;
   color: #303030;
+}
+
+.masters {
+  background-color: #f7f7f7;
+}
+
+.masters__subtitle {
+  margin-bottom: 20px;
+}
+
+.masters__title {
+  margin-bottom: 44px;
+  font-size: 42px;
+  line-height: 1.167;
+}
+
+.masters__thumb {
+  width: 100%;
+}
+
+.masters__image {
+  object-fit: cover;
+}
+
+.masters__master:not(:last-child) .masters__content {
+  padding-bottom: 64px;
+}
+
+.masters__content {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.masters__name {
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.389;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters__position {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.357;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+.masters__social {
+  display: flex;
+  justify-content: center;
+}
+
+.master__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.master__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.master__social-link:hover .master__social-svg, .master__social-link:focus .master__social-svg {
+  fill: #ff6c00;
+  transition: fill 200ms linear;
+}
+
+.master__social-svg {
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
