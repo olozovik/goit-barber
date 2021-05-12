@@ -2,6 +2,12 @@
   background-color: $mastersBackground;
 }
 
+.masters__container {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    padding: 0 159px 0 159px;
+  }
+}
+
 .masters__subtitle {
   margin-bottom: 20px;
 }
