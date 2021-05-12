@@ -12,6 +12,14 @@
   margin-bottom: 20px;
 }
 
+.masters__list {
+  @media screen and (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
 .masters__title {
   margin-bottom: 44px;
 

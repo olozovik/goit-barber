@@ -1327,6 +1327,14 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1280px) {
+  .masters__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
 .masters__title {
   margin-bottom: 44px;
   font-size: 42px;
