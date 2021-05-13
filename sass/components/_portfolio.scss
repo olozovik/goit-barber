@@ -1,7 +1,9 @@
 .portfolio__subtitle {
   margin-bottom: 44px;
 
-  line-height: 1.909;
+  @media screen and (max-width: $tablet - 1px) {
+    line-height: 1.909;
+  }
 }
 
 .portfolio__title {
@@ -21,11 +23,21 @@
 .portfolio__list {
   display: grid;
   gap: 30px;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .portfolio__thumb {
-  width: 418px;
-  height: 360px;
+  @media screen and (max-width: $tablet - 1px) {
+    max-width: 418px;
+    height: auto;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop -1px) {
+    width: 330px;
+    height: 360px;
+  }
 }
 
 .portfolio__image {

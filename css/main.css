@@ -1406,7 +1406,11 @@ body {
 
 .portfolio__subtitle {
   margin-bottom: 44px;
-  line-height: 1.909;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__subtitle {
+    line-height: 1.909;
+  }
 }
 
 .portfolio__title {
@@ -1426,10 +1430,23 @@ body {
   display: grid;
   gap: 30px;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .portfolio__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
-.portfolio__thumb {
-  width: 418px;
-  height: 360px;
+@media screen and (max-width: 767px) {
+  .portfolio__thumb {
+    max-width: 418px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px -1px) {
+  .portfolio__thumb {
+    width: 330px;
+    height: 360px;
+  }
 }
 
 .portfolio__image {
