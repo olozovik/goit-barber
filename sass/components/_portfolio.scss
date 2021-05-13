@@ -27,6 +27,10 @@
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .portfolio__thumb {
@@ -36,6 +40,11 @@
   }
   @media screen and (min-width: $tablet) and (max-width: $desktop -1px) {
     width: 330px;
+    height: 360px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
     height: 360px;
   }
 }

@@ -1435,6 +1435,11 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (min-width: 1280px) {
+  .portfolio__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 @media screen and (max-width: 767px) {
   .portfolio__thumb {
@@ -1445,6 +1450,12 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1280px -1px) {
   .portfolio__thumb {
     width: 330px;
+    height: 360px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .portfolio__thumb {
+    width: 270px;
     height: 360px;
   }
 }
