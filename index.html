@@ -138,7 +138,7 @@
         </div>
       </section>
 
-      <div class="section services">
+      <section class="section services">
         <div class="container services__container">
           <p class="subtitle subtitle--transparent services__subtitle">
             Проведи время в компании лучших мастеров
@@ -193,7 +193,7 @@
           </div>
           <button class="order-button services__button" type="button">онлайн-запись</button>
         </div>
-      </div>
+      </section>
 
       <section class="section why">
         <div class="container why__container">
@@ -609,6 +609,64 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="section contacts">
+        <div class="container contacts__container">
+          <div class="contacts__contacts-order contacts-order">
+            <h2 class="title contacts-order__title">Онлайн-запись</h2>
+            <form class="contacts-order__form">
+              <div class="contacts-order__contacts-group">
+                <input type="text" name="name" class="contacts-order__name" placeholder="Имя*" />
+                <input
+                  type="text"
+                  name="phone"
+                  class="contacts-order__phone"
+                  placeholder="Телефон*"
+                />
+              </div>
+              <textarea
+                name="message"
+                class="contacts-order__message"
+                placeholder="сообщение"
+              ></textarea>
+              <button class="order-button contacts-order__button" type="submit">отправить</button>
+            </form>
+          </div>
+          <div class="contacts__address address">
+            <h2 class="title address__title">Контакты</h2>
+            <ul class="address__list">
+              <li class="address__item">
+                <svg class="address__icon">
+                  <use href="../images/icons.svg#map-pin"></use>
+                </svg>
+                <span class="address__item-text">ул. Васильковая, 7А, Киев, 08132</span>
+              </li>
+              <li class="address__item">
+                <svg class="address__icon">
+                  <use href="../images/icons.svg#phone"></use>
+                </svg>
+                <span class="address__item-text">
+                  <a href="tel:+380441111111" class="address__item-link">+38 044 111 11 11</a>
+                </span>
+              </li>
+              <li class="address__item">
+                <svg class="address__icon">
+                  <use href="../images/icons.svg#mail"></use>
+                </svg>
+                <span class="address__item-text">
+                  <a href="mailto:barbershop@email.com" class="address__item-link"
+                    >barbershop@email.com</a
+                  >
+                </span>
+              </li>
+            </ul>
+            <div class="address__hours">
+              <p class="subtitle address__hours-title">время работы</p>
+              <p class="address__hours-text">Ежедневно с 9:00 до 22:00</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

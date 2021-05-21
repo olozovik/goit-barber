@@ -328,6 +328,14 @@ body {
   }
 }
 
+.about,
+.services,
+.why,
+.masters,
+.portfolio {
+  display: none;
+}
+
 .container {
   margin: 0 auto;
   outline: 2px dotted gray;
