@@ -1475,11 +1475,23 @@ body {
 
 .contacts {
   background-color: #191c26;
-  padding-top: 84px;
+  padding-bottom: 0;
 }
 
-.contacts-order {
-  padding-bottom: 84px;
+@media screen and (max-width: 1279px) {
+  .contacts__container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-order {
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 0 31px 84px 61px;
+  }
 }
 
 .contacts-order__title {
@@ -1492,18 +1504,17 @@ body {
 
 .contacts-order__name,
 .contacts-order__phone {
+  margin-bottom: 44px;
   display: block;
   width: 100%;
-  margin-bottom: 44px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 4px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   font-size: 14px;
   line-height: 1.364;
-  color: #ffffff;
   letter-spacing: 0.1em;
+  color: #ffffff;
   transition: border-color 250ms linear;
 }
 .contacts-order__name::placeholder,
@@ -1511,7 +1522,7 @@ body {
   font-weight: 600;
   color: rgba(157, 164, 189, 0.4);
   text-transform: lowercase;
-  transition: color 250ms linear;
+  transition: border-color 250ms linear, box-shadow 250ms linear;
 }
 .contacts-order__name:hover,
 .contacts-order__phone:hover {
@@ -1531,22 +1542,26 @@ body {
 }
 .contacts-order__name:focus,
 .contacts-order__phone:focus {
-  outline: 1px solid rgba(157, 164, 189, 0.4);
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #ff6c00;
+  box-shadow: 0 0 4px #ff6c00 inset;
 }
 
 .contacts-order__message {
+  margin-bottom: 44px;
   display: block;
   width: 100%;
   min-height: 76px;
-  margin-bottom: 44px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding: 4px 4px;
   font-size: 14px;
   line-height: 1.364;
   letter-spacing: 0.1em;
   color: #ffffff;
-  transition: border-color 250ms linear;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  transition: border-color 250ms linear, box-shadow 250ms linear;
 }
 .contacts-order__message::placeholder {
   color: rgba(157, 164, 189, 0.4);
@@ -1567,13 +1582,38 @@ body {
   color: rgba(157, 164, 189, 0.4);
 }
 .contacts-order__message:focus {
-  outline: 1px solid rgba(157, 164, 189, 0.4);
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #ff6c00;
+  box-shadow: 0 0 4px #ff6c00 inset;
 }
 
 .contacts-order__button {
   margin: 0 auto;
   padding-left: 38px;
   padding-right: 38px;
+}
+
+.address {
+  padding: 84px 0;
+  background-image: url(../images/contacts/contacts480.png), linear-gradient(to right, #111319, #111319);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .address {
+    background-image: url(../images/contacts/contacts480@2x.png), linear-gradient(to right, #111319, #111319);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address__content {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 31px;
+  }
 }
 
 .address__title {
