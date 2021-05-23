@@ -328,14 +328,6 @@ body {
   }
 }
 
-.about,
-.services,
-.why,
-.masters,
-.portfolio {
-  display: none;
-}
-
 .container {
   margin: 0 auto;
 }
@@ -1477,12 +1469,24 @@ body {
   background-color: #191c26;
   padding-bottom: 0;
 }
+@media screen and (min-width: 1280px) {
+  .contacts {
+    padding-top: 0;
+  }
+}
 
 @media screen and (max-width: 1279px) {
   .contacts__container {
     width: 100%;
     max-width: 100%;
     padding: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts__container {
+    display: flex;
+    padding: 0;
+    margin-left: calc(50% - 640px);
   }
 }
 
@@ -1498,6 +1502,13 @@ body {
     margin: 0 auto;
     max-width: 768px;
     padding: 0 39px 100px 39px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-order {
+    flex-shrink: 0;
+    padding: 130px 40px 130px 55px;
+    width: 655px;
   }
 }
 
@@ -1625,18 +1636,22 @@ body {
 
 .address {
   padding: 84px 0;
-  background-image: url(../images/contacts/contacts480.png), linear-gradient(to right, #111319, #111319);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  background-size: cover;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) {
+  .address {
+    background-image: url(../images/contacts/contacts480.png), linear-gradient(to right, #111319, #111319);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .address {
     background-image: url(../images/contacts/contacts480@2x.png), linear-gradient(to right, #111319, #111319);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .address {
     padding: 100px 0;
     background-image: url(../images/contacts/contacts768.png), linear-gradient(to right, #111319, #111319);
@@ -1646,9 +1661,24 @@ body {
     background-size: cover;
   }
 }
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) {
   .address {
     background-image: url(../images/contacts/contacts768@2x.png), linear-gradient(to right, #111319, #111319);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .address {
+    width: 100%;
+    padding: 130px 0 130px 100px;
+    background-image: url(../images/contacts/contacts1280.png), linear-gradient(to right, #111319, #111319);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .address {
+    background-image: url(../images/contacts/contacts1280@2x.png), linear-gradient(to right, #111319, #111319);
   }
 }
 
@@ -1680,7 +1710,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .address__text-wrapper {
     display: flex;
   }
