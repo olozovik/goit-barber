@@ -1348,8 +1348,10 @@ body {
   object-fit: cover;
 }
 
-.masters__master:not(:last-child) .masters__content {
-  padding-bottom: 64px;
+@media screen and (max-width: 1279px) {
+  .masters__master:not(:last-child) {
+    margin-bottom: 64px;
+  }
 }
 
 .masters__content {
@@ -1475,18 +1477,11 @@ body {
   }
 }
 
-@media screen and (max-width: 1279px) {
-  .contacts__container {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-  }
-}
 @media screen and (min-width: 1280px) {
   .contacts__container {
     display: flex;
-    padding: 0;
     margin-left: calc(50% - 640px);
+    padding: 0;
   }
 }
 
@@ -1533,8 +1528,8 @@ body {
 
 .contacts-order__name,
 .contacts-order__phone {
-  margin-bottom: 44px;
   display: block;
+  margin-bottom: 44px;
   width: 100%;
   padding: 8px 4px;
   background-color: transparent;
@@ -1563,18 +1558,14 @@ body {
 }
 .contacts-order__name:focus,
 .contacts-order__phone:focus {
-  border-bottom: 1px solid #ffffff;
+  outline: none;
+  border: 1px solid #ff6c00;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #ff6c00 inset;
 }
 .contacts-order__name:focus::placeholder,
 .contacts-order__phone:focus::placeholder {
   color: rgba(157, 164, 189, 0.4);
-}
-.contacts-order__name:focus,
-.contacts-order__phone:focus {
-  outline: none;
-  border-radius: 4px;
-  border: 1px solid #ff6c00;
-  box-shadow: 0 0 4px #ff6c00 inset;
 }
 @media screen and (min-width: 768px) {
   .contacts-order__name:not(:last-child),
@@ -1584,8 +1575,8 @@ body {
 }
 
 .contacts-order__message {
-  margin-bottom: 44px;
   display: block;
+  margin-bottom: 44px;
   width: 100%;
   min-height: 76px;
   padding: 4px 4px;
@@ -1611,16 +1602,13 @@ body {
   color: #ffffff;
 }
 .contacts-order__message:focus {
-  border-bottom: 1px solid #ffffff;
-}
-.contacts-order__message:focus::placeholder {
-  color: rgba(157, 164, 189, 0.4);
-}
-.contacts-order__message:focus {
   outline: none;
   border-radius: 4px;
   border: 1px solid #ff6c00;
   box-shadow: 0 0 4px #ff6c00 inset;
+}
+.contacts-order__message:focus::placeholder {
+  color: rgba(157, 164, 189, 0.4);
 }
 
 .contacts-order__button {
@@ -1640,9 +1628,8 @@ body {
 @media screen and (max-width: 767px) {
   .address {
     background-image: url(../images/contacts/contacts480.png), linear-gradient(to right, #111319, #111319);
-    background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    background-position: center;
     background-size: cover;
   }
 }
@@ -1655,9 +1642,8 @@ body {
   .address {
     padding: 100px 0;
     background-image: url(../images/contacts/contacts768.png), linear-gradient(to right, #111319, #111319);
-    background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    background-position: center;
     background-size: cover;
   }
 }
@@ -1721,6 +1707,11 @@ body {
     margin-right: 100px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .address__list {
+    margin-bottom: 70px;
+  }
+}
 
 .address__item {
   margin-bottom: 20px;
@@ -1755,9 +1746,9 @@ body {
 
 .address__icon {
   flex-shrink: 0;
+  display: block;
   margin-top: 4px;
   margin-right: 16px;
-  display: block;
   width: 24px;
   height: 24px;
 }

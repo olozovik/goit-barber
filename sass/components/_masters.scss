@@ -36,9 +36,9 @@
 }
 
 .masters__master {
-  &:not(:last-child) {
-    .masters__content {
-      padding-bottom: 64px;
+  @media screen and (max-width: $desktop - 1px) {
+    &:not(:last-child) {
+      margin-bottom: 64px;
     }
   }
 }
