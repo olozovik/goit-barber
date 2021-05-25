@@ -104,11 +104,11 @@
   color: $secondTextColor;
 
   @media screen and (min-width: $tablet) {
-    width: 360px;
+    max-width: 360px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 470px;
+    max-width: 470px;
     font-size: 18px;
     line-height: 1.667;
     letter-spacing: 0.02em;
