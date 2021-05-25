@@ -1060,7 +1060,7 @@ body {
   background-image: url(../images/services/services480.png), linear-gradient(to right, #111319, #111319);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 480px;
+  background-size: cover;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .services {
@@ -1070,7 +1070,7 @@ body {
 @media screen and (min-width: 768px) {
   .services {
     background-image: url(../images/services/services768.png), linear-gradient(to right, #111319, #111319);
-    background-size: 768px;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -1081,7 +1081,7 @@ body {
 @media screen and (min-width: 1280px) {
   .services {
     background-image: url(../images/services/services1280.png), linear-gradient(to right, #111319, #111319);
-    background-size: 1280px;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
