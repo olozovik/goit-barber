@@ -439,6 +439,7 @@ body {
 
 .header__container {
   position: relative;
+  padding: 0 31px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -447,7 +448,12 @@ body {
   .header__container {
     justify-content: flex-start;
     align-items: flex-start;
-    padding-left: 50px;
+    padding: 0 39px 0 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__container {
+    padding: 0 55px;
   }
 }
 
@@ -549,9 +555,13 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   .header__right {
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__right {
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
@@ -644,7 +654,6 @@ body {
 .hero__left {
   flex-shrink: 0;
   width: 159px;
-  border: 2px dotted tomato;
 }
 @media screen and (max-width: 767px) {
   .hero__left {

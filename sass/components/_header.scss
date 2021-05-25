@@ -12,6 +12,7 @@
 
 .header__container {
   position: relative;
+  padding: 0 31px;
 
   display: flex;
   justify-content: space-between;
@@ -20,7 +21,11 @@
   @media screen and (min-width: $tablet) {
     justify-content: flex-start;
     align-items: flex-start;
-    padding-left: 50px;
+    padding: 0 39px 0 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 55px;
   }
 }
 
@@ -127,9 +132,11 @@
     display: none;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     margin-left: auto;
+  }
 
+  @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
